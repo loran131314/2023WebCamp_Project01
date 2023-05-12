@@ -1,72 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Project One</title>
 </head>
+
 <body>
-    <div class="content">
-        <div class="card">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool1.png?raw=true" alt="Picture" class="img">
-            <div class="subject">
-                <h3>Chatbot Builder</h3>
-                <p>建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
-            </div>
-            <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">卡卡</span></div>
-            <div class="function"><span class="function-tag">#聊天</span><a href="#"><span class="material-icons">share</span></a></div>
-        </div>
-        <div class="card">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool2.png?raw=true" alt="Picture" class="img">
-            <div class="subject">
-                <h3>Image Recognition Platform</h3>
-                <p>專業的圖像識別平台，識別圖像、分類、標記等。<br><br></p>
-            </div>
-            <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">杰杰</span></div>
-            <div class="function"><span class="function-tag">#影像辨識</span><a href="#"><span class="material-icons">share</span></a></div>
-        </div>
-        <div class="card">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool3.png?raw=true" alt="Picture" class="img">
-            <div class="subject">
-                <h3>Language Translation API</h3>
-                <p>專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
-            </div>
-            <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">琪琪</span></div>
-            <div class="function"><span class="function-tag">#翻譯</span><a href="#"><span class="material-icons">share</span></a></div>
-        </div>
-        <div class="card">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool4.png?raw=true" alt="Picture" class="img">
-            <div class="subject">
-                <h3>Sentiment Analysis API</h3>
-                <p>自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查</p>
-            </div>
-            <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">昊昊</span></div>
-            <div class="function"><span class="function-tag">#行銷</span><a href="#"><span class="material-icons">share</span></a></div>
-        </div>
-        <div class="card">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool5.png?raw=true" alt="Picture" class="img">
-            <div class="subject">
-                <h3>Fraud Detection Platform</h3>
-                <p>預防詐騙活動，適用於銀行、金融、電商等。<br><br></p>
-            </div>
-            <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">卡卡</span></div>
-            <div class="function"><span class="function-tag">#客服</span><a href="#"><span class="material-icons">share</span></a></div>
-        </div>
-        <div class="card">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool6.png?raw=true" alt="Picture" class="img">
-            <div class="subject">
-                <h3>Voice Assistant SDK	</h3>
-                <p>通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
-            </div>
-            <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">杰杰</span></div>
-            <div class="function"><span class="function-tag">#生產力</span><a href="#"><span class="material-icons">share</span></a></div>
-        </div>
+    <div class="container">
+        <ul class="card-group">
+            <li class="card">
+                <div class="card-pic">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool1.png?raw=true"
+                        alt="Chatbot Builder" class="img">
+                </div>
+                <div class="subject">
+                    <h3>Chatbot Builder</h3>
+                    <p>建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                </div>
+                <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">卡卡</span></div>
+                <div class="function"><span class="function-tag">#聊天</span><a href="#" class="material-icons">share</a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-pic">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool2.png?raw=true"
+                        alt="Image Recognition Platform" class="img">
+                </div>
+                <div class="subject">
+                    <h3>Image Recognition Platform</h3>
+                    <p>專業的圖像識別平台，識別圖像、分類、標記等。</p>
+                </div>
+                <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">杰杰</span></div>
+                <div class="function"><span class="function-tag">#影像辨識</span><a href="#"
+                        class="material-icons">share</a></div>
+            </li>
+            <li class="card">
+                <div class="card-pic">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool3.png?raw=true"
+                        alt="Language Translation API" class="img">
+                </div>
+                <div class="subject">
+                    <h3>Language Translation API</h3>
+                    <p>專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
+                </div>
+                <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">琪琪</span></div>
+                <div class="function"><span class="function-tag">#翻譯</span><a href="#" class="material-icons">share</a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-pic">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool4.png?raw=true"
+                        alt="Sentiment Analysis API" class="img">
+                </div>
+                <div class="subject">
+                    <h3>Sentiment Analysis API</h3>
+                    <p>自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查</p>
+                </div>
+                <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">昊昊</span></div>
+                <div class="function"><span class="function-tag">#行銷</span><a href="#" class="material-icons">share</a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-pic">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool5.png?raw=true"
+                        alt="Fraud Detection Platform" class="img">
+                </div>
+                <div class="subject">
+                    <h3>Fraud Detection Platform</h3>
+                    <p>預防詐騙活動，適用於銀行、金融、電商等。</p>
+                </div>
+                <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">卡卡</span></div>
+                <div class="function"><span class="function-tag">#客服</span><a href="#" class="material-icons">share</a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-pic">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool6.png?raw=true"
+                        alt="Voice Assistant SDK" class="img">
+                </div>
+                <div class="subject">
+                    <h3>Voice Assistant SDK</h3>
+                    <p>通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
+                </div>
+                <div class="belong"><span class="ai">AI 模型</span><span class="belong-name">杰杰</span></div>
+                <div class="function"><span class="function-tag">#生產力</span><a href="#" class="material-icons">share</a>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
+
+<!-- 
+
+整體：
+    1.  網站圖片的 alt 屬性建議填入與圖片有關的資訊 ，可以閱讀這篇文章學習。
+    2.  建議補上 sans-serif 無襯字體，做為部分裝置無法顯示 Noto Sans TC 時的替代字體。
+        font-family: "Noto Sans TC" , sans-serif;
+
+細節 :
+    1.  .content 容器寬度建議依照設計稿調整為 1296px 。
+    2.  .card 建議使用 ul>li 結構。可以在父層包一層 ul.card-group ( 具有卡片群組語意 )，把 .content 設定的 flex 移到 .card-group。
+    3.  .content 名稱可以改成具有容器語意的 .container。
+
+    4.  padding 若同時會設定四個方向，可縮寫為一行語法，設定順序為 padding: 上 右 下 左
+    5.  .img 可以不設定 border-radius ，在 .card 加上 overflow: hidden 可以將圖片上方多出的直角隱藏，顯示出圓角。
+    6.  .img 卡片圖片可依照設計稿設計 hover 效果。可以在進入設計稿後點右上角播放 icon 預覽網站效果（如下圖）
+
+    7.  .subject h3 、.subject p 設定的 align-self: stretch; 沒有作用可以移除。
+    8.  卡片文字行數不同會造成卡片高度、對齊的問題，可以使用 Flex ，在 .card設定 display: flex; flex-direction: column; ，.subject設定 flex-grow: 1; 。
+    9.  .belong, .function 建議依照設計稿補上 border 線條 。
+    10. .function 建議設定 align-items: center; 將分享 icon 與文字對齊。
+    11. 分享 icon material-icons class 可以直接放在 a 標籤，不需多包一層 span。
+
+ -->
+
 </html>

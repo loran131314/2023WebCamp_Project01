@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+/* ----------------------------------------------- */
+
 *, *:before, *:after{
 	/* outline: 1px solid #a660a750; */
 	box-sizing: border-box;
@@ -54,33 +56,48 @@ table {
 .img, a{
 	display: block;
 	color: #000;
+	text-decoration: none;
 }
-.content{
-	font-family: "Noto Sans TC";
-	width: 1350px;
+.container{
+	font-family: "Noto Sans TC", sans-serif;
+	width: 1296px;
 	margin: 0 auto;
-	padding: 15px;
+}
+.card-group{
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 .card{
-	margin: 12px;
+	margin-bottom: 24px;
 	border: 1px solid #f2f2f2;
 	border-radius: 16px;
 	width: 416px;
+	overflow: hidden;	/* 替換 .img{border-radius;} */
+	display: flex;
+	flex-direction: column;
+}
+.card-pic{
+	overflow: hidden;
 }
 .img{
-	border-radius: 16px 16px 0 0;
+	transition: all 0.5s linear 0s;
+	/* border-radius: 16px 16px 0 0; */
+}
+.img:hover{
+	transform: scale(1.2);
 }
 .subject, .belong, .function{
 	padding: 20px 32px;
+}
+.subject{
+	flex-grow: 1;
 }
 .subject h3{
 	font-weight: 900;
 	font-size: 20px;
 	line-height: 1.2;
 	color: #020202;
-	align-self: stretch;
 	margin-bottom: 12px;
 }
 .subject p{
@@ -88,11 +105,12 @@ table {
 	font-size: 14px;
 	line-height: 1.5;
 	color: #525252;
-	align-self: stretch;
 }
 .belong, .function{
+	border-top: 1px solid #f2f2f2;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .belong .ai{
 	font-weight: 700;
@@ -106,7 +124,7 @@ table {
 	line-height: 1.5;
 	color: #020202;
 }
-.function .tag{
+.function .function-tag{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
